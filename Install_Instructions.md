@@ -52,7 +52,7 @@ Create a dedicated project folder to house your python server file alongside you
 }
 
 ```
-
+---
 
 ### 📦 Step 2: Install Required Dependencies
 You must install the high-level FastMCP server framework along with the Yahoo Finance client data scraper and pandas array processing library.
@@ -62,9 +62,8 @@ Run the following command to download the packages into your local system enviro
 ```bash
 pip3 install fastmcp yfinance pandas
 
-
 ```
-
+---
 ### 📄 Step 3: Create the Server Script
 
 Save your production server logic exactly as finance_server.py inside your ~/Developer/mcp-portfolio-tracker/ directory. This version enforces absolute path lookups to prevent Cursor or Claude from checking empty background extension directories.
@@ -227,6 +226,7 @@ def check_portfolio_and_watch_list(ticker_or_company: str) -> str:
 if __name__ == "__main__":
     mcp.run()
 ```
+---
 
 ### 🔍 Step 4: Previewing with MCP Inspector (Optional Development Check)
 Before modifying your client applications, verify that the tool handles communication correctly by loading the graphical testing interface:
@@ -241,6 +241,8 @@ npx @modelcontextprotocol/inspector python3 finance_server.py
 ```
 
 Click "List Tools", type in an entry like AAPL, and click "Run Tool" to confirm everything functions correctly.
+
+---
 
 ### ⚙️ Step 5: Inject Server Configuration into AI Clients
 To allow your LLM interface to query your custom tracker tool on-demand, register your python file path into the system configuration schemas below.
@@ -279,6 +281,7 @@ python3 /Users/sethrajaram/Developer/mcp-portfolio-tracker/finance_server.py
 ```
 	4.	Click Save.
 
+---
 
 🔄 Step 6: Clear Application Cache and Run Prompts
 ⚠️ CRITICAL TROUBLESHOOTING STEP: If you modify code statements, clicking "Refresh" within the UI panels often fails to clear old background Python processes. You must Completely Quit and Restart Cursor or Claude Desktop to load your modifications.
@@ -288,6 +291,7 @@ Once restarted, test your deployment using natural language. You no longer need 
 •	"Give me a status update on NVDA"
 The LLM will automatically query your local server, compute your investment metrics, and present the formatted report directly in your chat interface.
 
+---
 
 
 
