@@ -54,7 +54,7 @@ Create a dedicated project folder to house your python server file alongside you
 ```
 
 
-📦 Step 2: Install Required Dependencies
+### 📦 Step 2: Install Required Dependencies
 You must install the high-level FastMCP server framework along with the Yahoo Finance client data scraper and pandas array processing library.
 Run the following command to download the packages into your local system environment:
 
