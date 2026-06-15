@@ -64,31 +64,28 @@ pip3 install fastmcp yfinance pandas
 
 
 ```
-📄 Step 3: Create the Server Script
+
+### 📄 Step 3: Create the Server Script
 
 Save your production server logic exactly as finance_server.py inside your ~/Developer/mcp-portfolio-tracker/ directory. This version enforces absolute path lookups to prevent Cursor or Claude from checking empty background extension directories.
-🔍 Step 4: Previewing with MCP Inspector (Optional Development Check)
+
+### 🔍 Step 4: Previewing with MCP Inspector (Optional Development Check)
 Before modifying your client applications, verify that the tool handles communication correctly by loading the graphical testing interface:
 
-Save your production server logic exactly as finance_server.py inside your ~/Developer/mcp-portfolio-tracker/ directory. This version enforces absolute path lookups to prevent Cursor or Claude from checking empty background extension directories.
-🔍 Step 4: Previewing with MCP Inspector (Optional Development Check)
-Before modifying your client applications, verify that the tool handles communication correctly by loading the graphical testing interface:
+Save your production server logic exactly as finance_server.py inside your ~/Developer/mcp-portfolio-tracker/ directory. 
 
-
-Save your production server logic exactly as finance_server.py inside your ~/Developer/mcp-portfolio-tracker/ directory. This version enforces absolute path lookups to prevent Cursor or Claude from checking empty background extension directories.
-🔍 Step 4: Previewing with MCP Inspector (Optional Development Check)
-Before modifying your client applications, verify that the tool handles communication correctly by loading the graphical testing interface:
-
+This version enforces absolute path lookups to prevent Cursor or Claude from checking empty background extension directories.
 
 ```bash
 npx @modelcontextprotocol/inspector python3 finance_server.py
 
-
 ```
 
 Click "List Tools", type in an entry like AAPL, and click "Run Tool" to confirm everything functions correctly.
-⚙️ Step 5: Inject Server Configuration into AI Clients
+
+### ⚙️ Step 5: Inject Server Configuration into AI Clients
 To allow your LLM interface to query your custom tracker tool on-demand, register your python file path into the system configuration schemas below.
+
 Option A: Claude Desktop Configuration
 	1.	Open or create the local configuration file at the following location:
 •	macOS: ~/Library/Application Support/Claude/claude_desktop_config.json
