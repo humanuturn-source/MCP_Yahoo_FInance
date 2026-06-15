@@ -63,9 +63,12 @@ Run the following command to download the packages into your local system enviro
 You must install the high-level FastMCP server framework along with the Yahoo Finance client data scraper and pandas array processing library.
 Run the following command to download the packages into your local system environment:
 
+
+```bash
 pip3 install fastmcp yfinance pandas
 
 
+```
 📄 Step 3: Create the Server Script
 
 Save your production server logic exactly as finance_server.py inside your ~/Developer/mcp-portfolio-tracker/ directory. This version enforces absolute path lookups to prevent Cursor or Claude from checking empty background extension directories.
@@ -82,8 +85,11 @@ Save your production server logic exactly as finance_server.py inside your ~/Dev
 Before modifying your client applications, verify that the tool handles communication correctly by loading the graphical testing interface:
 
 
+```bash
 npx @modelcontextprotocol/inspector python3 finance_server.py
 
+
+```
 
 Click "List Tools", type in an entry like AAPL, and click "Run Tool" to confirm everything functions correctly.
 ⚙️ Step 5: Inject Server Configuration into AI Clients
@@ -94,6 +100,7 @@ Option A: Claude Desktop Configuration
 	2.	Update the mcpServers tracking object to include your absolute system directories:
 
 
+```json
 {
   "mcpServers": {
     "portfolio-tracker": {
@@ -105,13 +112,20 @@ Option A: Claude Desktop Configuration
   }
 }
 
+```
+
 Option B: Cursor Editor Configuration
 	1.	Navigate to Cursor Settings -> Features -> MCP.
 	2.	Click "+ Add New MCP Server".
 	3.	Input the configuration details:
 •	Name: portfolio-tracker
 •	Type: stdio
-•	Command: python3 /Users/sethrajaram/Developer/mcp-portfolio-tracker/finance_server.py
+•	Command:
+
+```bash
+python3 /Users/sethrajaram/Developer/mcp-portfolio-tracker/finance_server.py
+
+```
 	4.	Click Save.
 
 
