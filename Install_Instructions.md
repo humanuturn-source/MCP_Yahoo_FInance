@@ -248,9 +248,9 @@ Click "List Tools", type in an entry like AAPL, and click "Run Tool" to confirm 
 To allow your LLM interface to query your custom tracker tool on-demand, register your python file path into the system configuration schemas below.
 
 Option A: Claude Desktop Configuration
-	1.	Open or create the local configuration file at the following location:
-•	macOS: ~/Library/Application Support/Claude/claude_desktop_config.json
-	2.	Update the mcpServers tracking object to include your absolute system directories:
+	* 1.	Open or create the local configuration file at the following location:
+				macOS: ~/Library/Application Support/Claude/claude_desktop_config.json
+	* 2.	Update the mcpServers tracking object to include your absolute system directories:
 
 
 ```json
@@ -268,9 +268,9 @@ Option A: Claude Desktop Configuration
 ```
 
 Option B: Cursor Editor Configuration
-	1.	Navigate to Cursor Settings -> Features -> MCP.
-	2.	Click "+ Add New MCP Server".
-	3.	Input the configuration details:
+	* 1.	Navigate to Cursor Settings -> Features -> MCP.
+	* 2.	Click "+ Add New MCP Server".
+	* 3.	Input the configuration details:
 •	Name: portfolio-tracker
 •	Type: stdio
 •	Command:
@@ -279,7 +279,7 @@ Option B: Cursor Editor Configuration
 python3 /Users/sethrajaram/Developer/mcp-portfolio-tracker/finance_server.py
 
 ```
-	4.	Click Save.
+* 4.	Click Save.
 
 ---
 
