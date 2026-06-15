@@ -268,16 +268,16 @@ Option A: Claude Desktop Configuration
 ```
 
 Option B: Cursor Editor Configuration
-	* 1.	Navigate to Cursor Settings -> Features -> MCP.
-	* 2.	Click "+ Add New MCP Server".
-	* 3.	Input the configuration details:
-•	Name: portfolio-tracker
-•	Type: stdio
-•	Command:
+* 1.	Navigate to Cursor Settings -> Features -> MCP.
+* 2.	Click "+ Add New MCP Server".
+* 3.	Input the configuration details:
+			Name: portfolio-tracker
+			Type: stdio
+			Command:
 
 ```bash
-python3 /Users/sethrajaram/Developer/mcp-portfolio-tracker/finance_server.py
-
+			python3 /Users/sethrajaram/Developer/mcp-portfolio-tracker/finance_server.py
+			
 ```
 * 4.	Click Save.
 
