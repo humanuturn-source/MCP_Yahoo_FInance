@@ -27,6 +27,7 @@ Create a dedicated project folder to house your python server file alongside you
 	1.	Generate your asset files inside this folder:
 •	portfolio.json: This structure records your current asset properties. Create it with the following baseline formatting:
 
+```json
 {
   "AAPL": {
     "Quantity": 50,
@@ -38,6 +39,7 @@ Create a dedicated project folder to house your python server file alongside you
   }
 }
 
+```
 •	watchlist.json: This structure tracks assets you are monitoring for entry zones:
 
 {
