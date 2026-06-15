@@ -24,8 +24,8 @@ Create a dedicated project folder to house your python server file alongside you
    cd ~/Developer/mcp-portfolio-tracker
    ````
 
-	1.	Generate your asset files inside this folder:
-•	portfolio.json: This structure records your current asset properties. Create it with the following baseline formatting:
+Generate your asset files inside this folder:
+* portfolio.json: This structure records your current asset properties. Create it with the following baseline formatting:
 
 ```json
 {
@@ -40,7 +40,7 @@ Create a dedicated project folder to house your python server file alongside you
 }
 
 ```
-•	watchlist.json: This structure tracks assets you are monitoring for entry zones:
+* watchlist.json: This structure tracks assets you are monitoring for entry zones:
 
 
 ```json
