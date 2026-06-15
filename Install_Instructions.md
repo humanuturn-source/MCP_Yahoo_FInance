@@ -284,11 +284,16 @@ python3 /Users/sethrajaram/Developer/mcp-portfolio-tracker/finance_server.py
 ---
 
 🔄 Step 6: Clear Application Cache and Run Prompts
-⚠️ CRITICAL TROUBLESHOOTING STEP: If you modify code statements, clicking "Refresh" within the UI panels often fails to clear old background Python processes. You must Completely Quit and Restart Cursor or Claude Desktop to load your modifications.
+
+⚠️ CRITICAL TROUBLESHOOTING STEP: 
+If you modify code statements, clicking "Refresh" within the UI panels often fails to clear old background Python processes. You must Completely Quit and Restart Cursor or Claude Desktop to load your modifications.
+
 Once restarted, test your deployment using natural language. You no longer need to reference the tool name explicitly:
-•	"Check AAPL"
-•	"How is Google looking?"
-•	"Give me a status update on NVDA"
+
+*	"Check AAPL"
+*	"How is Google looking?"
+*	"Give me a status update on NVDA"
+  
 The LLM will automatically query your local server, compute your investment metrics, and present the formatted report directly in your chat interface.
 
 ---
