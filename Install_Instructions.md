@@ -42,6 +42,8 @@ Create a dedicated project folder to house your python server file alongside you
 ```
 •	watchlist.json: This structure tracks assets you are monitoring for entry zones:
 
+
+```json
 {
   "NVDA": {
     "Planned_Quantity": 20,
@@ -49,12 +51,8 @@ Create a dedicated project folder to house your python server file alongside you
   }
 }
 
-{
-  "NVDA": {
-    "Planned_Quantity": 20,
-    "Target_Buy_Price": 110.00
-  }
-}
+```
+
 
 📦 Step 2: Install Required Dependencies
 You must install the high-level FastMCP server framework along with the Yahoo Finance client data scraper and pandas array processing library.
