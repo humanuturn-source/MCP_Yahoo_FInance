@@ -59,11 +59,6 @@ You must install the high-level FastMCP server framework along with the Yahoo Fi
 Run the following command to download the packages into your local system environment:
 
 
-📦 Step 2: Install Required Dependencies
-You must install the high-level FastMCP server framework along with the Yahoo Finance client data scraper and pandas array processing library.
-Run the following command to download the packages into your local system environment:
-
-
 ```bash
 pip3 install fastmcp yfinance pandas
 
